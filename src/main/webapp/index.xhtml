@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets" lang="es">
+
+<h:head>
+
+	<f:facet name="first">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+	</f:facet>
+	<title>Sistema Escolar</title>
+</h:head>
+
+<h:body>
+	<h:outputLabel value="Hola Mundo" />
+
+	<h:dataTable var="p" value="#{persona.lista}">
+
+		<f:facet name="header">Listado de Personas</f:facet>
+		
+		
+		<h:column headerText="Nombre">
+			<h:outputText value="#{p.nombre}"/>
+		</h:column>
+	</h:dataTable>
+</h:body>
+</html>
